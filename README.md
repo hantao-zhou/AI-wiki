@@ -1,6 +1,8 @@
 # Introduction
 
-This is a repo for knowledges related to AI
+This is a repo for knowledges related to AI.
+
+The markdown formatting is not strict, it follows the utility of Obsidian
 
 ## 
 

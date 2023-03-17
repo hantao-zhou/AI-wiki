@@ -1,6 +1,6 @@
 # Limits Theory in Mathematics
 
-From the [README] you 
+From the [[README]] you will understand
 
 Limits theory is a fundamental concept in mathematics, particularly in calculus and real analysis. A limit is the value that a function approaches as the input approaches a certain value. Here are some key points to keep in mind when studying limits theory:
 
