@@ -22,6 +22,78 @@ Machine learning is a subfield of artificial intelligence that focuses on the de
 
 By understanding these key points, you can gain a deeper appreciation for the power and potential of machine learning and how it can be applied to solve real-world problems.
 
+# exact topics
+
+Here are some common topics in Machine Learning:
+
+1. Supervised Learning
+- Regression
+- Classification
+- Support Vector Machines (SVMs)
+- Decision Trees
+- Random Forests
+- Boosting
+
+2. Unsupervised Learning
+- Clustering
+- Dimensionality Reduction
+- Principal Component Analysis (PCA)
+- Independent Component Analysis (ICA)
+- Non-negative Matrix Factorization (NMF)
+
+3. Deep Learning
+- Artificial Neural Networks (ANNs)
+- Convolutional Neural Networks (CNNs)
+- Recurrent Neural Networks (RNNs)
+- Generative Adversarial Networks (GANs)
+- Autoencoders
+
+4. Reinforcement Learning
+- Markov Decision Processes (MDPs)
+- Value-Based Methods
+- Policy-Based Methods
+- Model-Based Methods
+
+5. Bayesian Machine Learning
+- Bayesian Networks
+- Probabilistic Graphical Models
+- Bayesian Optimization
+- Variational Inference
+
+6. Ensemble Methods
+- Bagging
+- Boosting
+- Stacking
+- Random Subspace Method
+
+7. Transfer Learning
+- Domain Adaptation
+- Multi-Task Learning
+- One-Shot Learning
+- Zero-Shot Learning
+
+8. Explainable AI
+- Model Interpretability
+- Counterfactual Explanation
+- Local and Global Explanation
+- Model Transparency
+
+9. Optimization
+- Gradient Descent
+- Stochastic Gradient Descent (SGD)
+- Adam Optimization
+- Newton's Method
+- Conjugate Gradient Descent
+
+10. Evaluation Metrics
+- Accuracy
+- Precision and Recall
+- F1 Score
+- ROC Curve and AUC
+- Confusion Matrix
+
+Of course, this is not an exhaustive list, and there are many other topics and subfields in Machine Learning, such as Time Series Analysis, Semi-Supervised Learning, Active Learning, and more.
+
 # init sh
 
 Here's an example shell script that creates folders for each key point:
