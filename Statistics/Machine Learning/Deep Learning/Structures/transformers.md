@@ -18,6 +18,7 @@ Here is a brief overview of the structure of a transformer:
 
 Overall, the transformer architecture is designed to capture long-range dependencies and contextual information in natural language sequences, making it a powerful tool for a wide range of NLP tasks, including language modeling, machine translation, and text classification.
 
+# Wikipedia article
 
 A **transformer** is a [deep learning](https://en.wikipedia.org/wiki/Deep_learning "Deep learning") model that adopts the mechanism of [self-attention](https://en.wikipedia.org/wiki/Attention_(machine_learning) "Attention (machine learning)"), differentially weighting the significance of each part of the input data. It is used primarily in the fields of [natural language processing](https://en.wikipedia.org/wiki/Natural_language_processing "Natural language processing") (NLP)<sup id="cite_ref-:0_1-0"><a href="https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)#cite_note-:0-1">[1]</a></sup> and [computer vision](https://en.wikipedia.org/wiki/Computer_vision "Computer vision") (CV).<sup id="cite_ref-2"><a href="https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)#cite_note-2">[2]</a></sup>
 
@@ -217,3 +218,8 @@ _Transformers_ is a library produced by [Hugging Face](https://en.wikipedia.org/
 17.  ^ [Jump up to: <sup><i><b>a</b></i></sup>](https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)#cite_ref-:8_17-0) [<sup><i><b>b</b></i></sup>](https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)#cite_ref-:8_17-1) Wang, Alex; Singh, Amanpreet; Michael, Julian; Hill, Felix; Levy, Omer; Bowman, Samuel (2018). "GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding". _Proceedings of the 2018 EMNLP Workshop BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP_. Stroudsburg, PA, USA: Association for Computational Linguistics: 353–355. [arXiv](https://en.wikipedia.org/wiki/ArXiv_(identifier) "ArXiv (identifier)"):[1804.07461](https://arxiv.org/abs/1804.07461). [doi](https://en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.18653/v1/w18-5446](https://doi.org/10.18653%2Fv1%2Fw18-5446). [S2CID](https://en.wikipedia.org/wiki/S2CID_(identifier) "S2CID (identifier)") [5034059](https://api.semanticscholar.org/CorpusID:5034059).
 
 ## Further reading\[[edit](https://en.wikipedia.org/w/index.php?title=Transformer_(machine_learning_model)&action=edit&section=21 "Edit section: Further reading")\]
+
+
+# related stuff
+
+[[machine translation]]
