@@ -23,4 +23,6 @@ The following repositories have been helpful in compiling the content for this r
 
 # Contribution
 
+Thanks to my selfless friends Ruihai Hou
+
 Special thanks to the powerful contributions of GPT, which has greatly improved the quality and usefulness of the content in this repository. If you have any suggestions or contributions to make, please feel free to contribute to this repository.
