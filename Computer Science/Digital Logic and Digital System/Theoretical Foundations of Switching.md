@@ -163,3 +163,57 @@ Overall, binary coding is a fundamental concept in digital electronics and compu
 
 ## classification
 
+
+1. [[BCD]], also known as Binary Coded Decimal, is a system for representing decimal numbers using binary digits. In BCD coding, each decimal digit is represented by a four-bit binary code. For example, the decimal number 123 is represented in BCD as 0001 0010 0011. BCD coding was commonly used in early computer systems and electronic devices that needed to display or process decimal numbers. One advantage of BCD coding is that it allows for easy conversion between binary and decimal representations of numbers. However, BCD coding is less efficient than other binary encoding schemes for representing large numbers, as it requires more bits to represent each decimal digit than other binary encoding schemes.
+
+2. Natural binary coding is a binary encoding scheme where each decimal number is directly represented by its binary equivalent. For example, the decimal number 123 is represented in natural binary as 01111011. Natural binary coding is the simplest and most efficient binary encoding scheme for representing integers, but it cannot represent fractional numbers.
+
+3. [[Gray Code]]Gray code, also known as reflected binary code, is a binary encoding scheme where **two adjacent numbers differ by only one bit**. For example, in a 3-bit Gray code sequence, the numbers 000, 001, 011, 010, 110, 111, 101, and 100 are represented in that order. Gray code is commonly used in digital communications systems and in mechanical systems that require precise positioning.
+
+4. Parity checking is a method for detecting errors in data transmission. In a parity check, an extra bit is added to the data to indicate whether the number of 1s in the data is odd or even. The receiver can then check the parity bit to ensure that the number of 1s in the received data is correct. For example, in even parity checking, if the data contains an odd number of 1s, the parity bit is set to 1 to make the total number of 1s even.
+
+5. ASCII, or American Standard Code for Information Interchange, is a widely-used character encoding scheme for representing text in computers and other devices. In ASCII, each character is represented by a unique 7-bit binary code. For example, the letter "A" is represented by the binary code 01000001. ASCII can represent a wide range of characters, including letters, numbers, and symbols, but it is limited to the ASCII character set and cannot represent characters from other languages or non-standard symbols. Unicode, which is a more recent encoding scheme, can represent a much wider range of characters and is used as a standard for character encoding in many modern devices and applications.
+
+## examples
+
+### differ BCD-binary
+
+1. Consider the decimal number 123. In BCD, it is represented as 0001 0010 0011, while in natural binary, it is represented as 01111011. Note that BCD uses 12 bits to represent this number (3 digits x 4 bits per digit), while natural binary uses only 8 bits. This means that BCD is less efficient than natural binary for representing integers.
+
+2. Now consider the decimal number 10. In BCD, it is represented as 0001 0000, while in natural binary, it is represented as 1010. Note that both encoding schemes use the same number of bits to represent this number (4 bits). However, BCD requires more operations to convert the decimal number to binary compared to natural binary, since each decimal digit must be converted to its four-bit binary equivalent.
+
+3. Finally, consider the decimal number 1.5. In BCD, it can be represented as 0001 0101 (with the last four bits representing the decimal fraction 0.5), while in natural binary, it is represented as 1.1 (with the binary point indicating the decimal fraction). Note that BCD requires more bits to represent decimal fractions compared to natural binary, since each decimal digit must be represented by its own four-bit binary code.
+
+Overall, the main difference between BCD and natural binary encoding schemes is that BCD is optimized for representing decimal numbers, while natural binary is optimized for representing integers. BCD requires more bits to represent integers, but it can represent decimal fractions more easily. Natural binary is more efficient for representing integers, but it cannot represent decimal fractions without using additional bits or a different encoding scheme.
+
+### cyclic feature
+
+In Gray code, the lowest bit is often referred to as the "least significant bit" or LSB. This sentence is saying that the LSB of the Gray code sequence repeats with the pattern 0110. For example, in a 4-bit Gray code sequence, the sequence might be 0000, 0001, 0011, 0010, 0110, 0111, 0101, 0100, where the LSB (the rightmost bit) cycles with the pattern 0110.
+
+This property of Gray code can be useful in certain applications, such as in rotary encoders, where the LSB is often used to indicate the direction of rotation. By cycling with a pattern, the LSB can provide information about the direction of rotation even if some of the other bits in the code are corrupted or distorted.
+
+The second bit is 00111100 cyclic
+
+The third is 0000111111110000 cyclic, etc.
+
+### parity checkings
+
+I apologize for my mistake earlier. Here's the corrected table for even and odd parity checking examples on the 8421 BCD code from 0 to 10:
+
+| Decimal | 8421 BCD | Even Parity | Odd Parity |
+| --- | --- | --- | --- |
+| 0 | 0000 | 0000 0 | 0000 1 |
+| 1 | 0001 | 0001 0 | 0001 1 |
+| 2 | 0010 | 0010 1 | 0010 0 |
+| 3 | 0011 | 0011 1 | 0011 0 |
+| 4 | 0100 | 0100 1 | 0100 0 |
+| 5 | 0101 | 0101 0 | 0101 1 |
+| 6 | 0110 | 0110 0 | 0110 1 |
+| 7 | 0111 | 0111 1 | 0111 0 |
+| 8 | 1000 | 1000 1 | 1000 0 |
+| 9 | 1001 | 1001 0 | 1001 1 |
+| 10 | 1010 | 1010 0 | 1010 1 |
+
+In the "Even Parity" column, an extra parity bit is added to the BCD code such that the total number of 1s in the BCD code (including the parity bit) is even. For example, for the decimal number 1, the BCD code is 0001 in 8421 BCD, and the even parity version is 0001 0, which has two 1s in total, making the parity bit 0 to ensure an even total number of 1s.
+
+In the "Odd Parity" column, an extra parity bit is added such that the total number of 1s in the BCD code (including the parity bit) is odd. For example, for the decimal number 1, the odd parity version is 0001 1, which has three 1s in total, making the parity bit 1 to ensure an odd total number of 1s.
