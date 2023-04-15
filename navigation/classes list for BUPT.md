@@ -71,6 +71,8 @@ Mathematics:
 - Formal Languages and Automata
 - Mathematical Foundation of Intelligence Science
 
+[[axiomatic set theory]]
+
 Physics:
 - University Physics C
 - Physics Experiment A
