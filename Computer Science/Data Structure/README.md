@@ -15,3 +15,7 @@ Data Structures are a fundamental concept in computer science that deals with or
 7. Hash Tables: Hash tables are a data structure that allows for efficient insertion, retrieval, and deletion of key-value pairs. Keys are hashed to a unique index in an array, where the corresponding value is stored.
 
 Overall, Data Structures provide a foundation for efficient data management and manipulation in computer programs. They are a key area of study for computer science and engineering students, as well as professionals who work in the field of software development.
+
+# prompts
+
+write an md for linked list as a part of data structure, include examples in c,cpp,python. give examples q&a for university exams
