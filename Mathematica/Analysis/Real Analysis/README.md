@@ -1,3 +1,8 @@
+# Sources
+
+1. [Math 405: Introduction to Real Analysis (jhu.edu)](https://math.jhu.edu/~bernstein/math405/index.html)
+2. [Pauls Online Math Notes (lamar.edu)](https://tutorial.math.lamar.edu/)
+
 # Key Points for Real Analysis
 
 Real analysis is a branch of mathematical analysis that deals with the study of real-valued functions, sequences, and series. Here are some key points to keep in mind when studying real analysis:
