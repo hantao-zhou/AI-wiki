@@ -73,17 +73,17 @@ The critical path of a carry runs through one XOR gate in adder and through 2 ga
 
 The [truth table](https://en.wikipedia.org/wiki/Truth_table "Truth table") for the full adder is:
 
-| **Inputs** | **Outputs** |
-| --- | --- |
-| **A** | **B** | **C**<sub>in</sub> | **C**<sub>out</sub> | **S** |
-| 0 | 0 | 0 | 0 | 0 |
-| 0 | 0 | 1 | 0 | 1 |
-| 0 | 1 | 0 | 0 | 1 |
-| 0 | 1 | 1 | 1 | 0 |
-| 1 | 0 | 0 | 0 | 1 |
-| 1 | 0 | 1 | 1 | 0 |
-| 1 | 1 | 0 | 1 | 0 |
-| 1 | 1 | 1 | 1 | 1 |
+
+| **A** | **B** | **C**<sub>in</sub> | **C**<sub>out</sub> | **S** | 
+| ----- | ----- | ------------------ | ------------------- | ----- |
+| 0     | 0     | 0                  | 0                   | 0     |
+| 0     | 0     | 1                  | 0                   | 1     |
+| 0     | 1     | 0                  | 0                   | 1     |
+| 0     | 1     | 1                  | 1                   | 0     |
+| 1     | 0     | 0                  | 0                   | 1     |
+| 1     | 0     | 1                  | 1                   | 0     |
+| 1     | 1     | 0                  | 1                   | 0     |
+| 1     | 1     | 1                  | 1                   | 1     |
 
 Inverting all inputs of a full adder also inverts all of its outputs, which can be used in the design of fast ripple-carry adders, because there is no need to invert the carry.<sup id="cite_ref-Fischer_5-0"><a href="https://en.wikipedia.org/wiki/Adder_(electronics)#cite_note-Fischer-5">[5]</a></sup>
 
@@ -214,3 +214,51 @@ Just as in Binary adders, combining two input currents effectively adds those cu
 -   [Interactive Half Adder Simulation](https://web.archive.org/web/20190416182052/http://teahlab.com/Half_Adder/) (requires Java), Half Adder circuit built with Teahlab's circuit simulator.
 -   [4-bit Full Adder Simulation](http://www.edaplayground.com/s/example/368) built in Verilog, and the accompanying [Ripple Carry Full Adder Video Tutorial](https://www.youtube.com/watch?v=bL3ihMA8_Gs&hd=1)
 -   Shirriff, Ken (November 2020). ["Reverse-engineering the carry-lookahead circuit in the Intel 8008 processor"](http://www.righto.com/2020/11/reverse-engineering-carry-lookahead.html).
+
+
+---
+created: 2023-04-21T22:55:58 (UTC +08:00)
+tags: [Data Structures,Algorithms,Python,Java,C,C++,JavaScript,Android Development,SQL,Data Science,Machine Learning,PHP,Web Development,System Design,Tutorial,Technical Blogs,Interview Experience,Interview Preparation,Programming,Competitive Programming,SDE Sheet,Job-a-thon,Coding Contests,GATE CSE,HTML,CSS,React,NodeJS,Placement,Aptitude,Quiz,Computer Science,Programming Examples,GeeksforGeeks Courses,Puzzles]
+source: https://www.geeksforgeeks.org/full-adder-in-digital-logic/
+author: GeeksforGeeks
+---
+
+# Full Adder in Digital Logic - GeeksforGeeks
+
+> ## Excerpt
+> Full Adder is the adder that adds three inputs and produces two outputs. The first two inputs are A and B and the third input is an input carry as C IN. The output carry is designated as C OUT and the normal output is designated as S which is SUM. A
+
+---
+Full Adder is the adder that adds three inputs and produces two outputs. The first two inputs are A and B and the third input is an input carry as C-IN. The output carry is designated as C-OUT and the normal output is designated as S which is SUM. A full adder logic is designed in such a manner that can take eight inputs together to create a byte-wide adder and cascade the carry bit from one adder to another. we use a full adder because when a carry-in bit is available, another 1-bit adder must be used since a 1-bit half-adder does not take a carry-in bit. A 1-bit full adder adds three operands and generates 2-bit results.
+
+![](https://media.geeksforgeeks.org/wp-content/uploads/1-77.png) **Full Adder Truth Table:** ![](https://media.geeksforgeeks.org/wp-content/uploads/2-41.jpg) 
+
+**Logical Expression for SUM:** = A’ B’ C-IN + A’ B C-IN’ + A B’ C-IN’ + A B C-IN = C-IN (A’ B’ + A B) + C-IN’ (A’ B + A B’) = C-IN XOR (A XOR B) = (1,2,4,7) 
+
+**Logical Expression for C-OUT:** = A’ B C-IN + A B’ C-IN + A B C-IN’ + A B C-IN = A B + B C-IN + A C-IN = (3,5,6,7) 
+
+**Another form in which C-OUT can be implemented:** = A B + A C-IN + B C-IN (A + A’) = A B C-IN + A B + A C-IN + A’ B C-IN = A B (1 +C-IN) + A C-IN + A’ B C-IN = A B + A C-IN + A’ B C-IN = A B + A C-IN (B + B’) + A’ B C-IN = A B C-IN + A B + A B’ C-IN + A’ B C-IN = A B (C-IN + 1) + A B’ C-IN + A’ B C-IN = A B + A B’ C-IN + A’ B C-IN = AB + C-IN (A’ B + A B’) 
+
+Therefore COUT = AB + C-IN (A EX – OR B) 
+
+![](https://media.geeksforgeeks.org/wp-content/uploads/3-57.png)
+
+Full Adder logic circuit.
+
+### Implementation of Full Adder using Half Adders:
+
+2 Half Adders and an OR gate is required to implement a Full Adder. 
+
+![](https://media.geeksforgeeks.org/wp-content/uploads/4-34.png) 
+
+With this logic circuit, two bits can be added together, taking a carry from the next lower order of magnitude, and sending a carry to the next higher order of magnitude. 
+
+### Implementation of Full Adder using NAND gates: ![](https://media.geeksforgeeks.org/wp-content/cdn-uploads/nand-2.png)**Implementation of Full Adder using NOR gates:** 
+
+Total 9 NOR gates are required to implement a Full Adder. ![](https://media.geeksforgeeks.org/wp-content/cdn-uploads/nor-1.png)In the logic expression above, one would recognize the logic expressions of a 1-bit half-adder. A 1-bit full adder can be accomplished by cascading two 1-bit half adders.
+
+Last Updated : 09 Jun, 2022
+
+Like Article
+
+Save Article
