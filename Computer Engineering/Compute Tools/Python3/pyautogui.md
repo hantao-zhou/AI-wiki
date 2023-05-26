@@ -1,0 +1,1 @@
+[Welcome to PyAutoGUI’s documentation! — PyAutoGUI documentation](https://pyautogui.readthedocs.io/en/latest/)
