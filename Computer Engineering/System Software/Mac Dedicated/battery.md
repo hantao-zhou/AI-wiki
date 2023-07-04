@@ -18,3 +18,8 @@ If you have a Mac-based Mac, you can consider using one of the following tools:
 2. Ai-dente: This tool can also be used to limit the battery charge on your Mac-based Mac.
 
 With the help of these tools, you can keep your Mac battery healthy and extend its lifespan.
+
+```bash
+curl -s https://raw.githubusercontent.com/actuallymentor/battery/main/setup.sh | bash
+```
+
