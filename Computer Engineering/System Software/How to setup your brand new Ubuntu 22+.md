@@ -24,7 +24,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 [[How to create a systemd service in Linux]]
 [[How to Set Up and Use Wake-on-LAN]]
-
+``
 #### systemd file
 
 ```bash
