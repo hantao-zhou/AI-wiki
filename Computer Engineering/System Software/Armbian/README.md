@@ -1,0 +1,1 @@
+It is a better choice if your dev board isn't greatly supported by the company like the rasp pi
