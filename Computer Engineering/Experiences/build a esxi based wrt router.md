@@ -871,4 +871,3 @@ ESXi 8.0虚拟机安装iKuai主路由及保姆级配置
 4. get x86-64 version of openwrt [Index of /releases/22.03.5/targets/x86/64/ (openwrt.org)](https://downloads.openwrt.org/releases/22.03.5/targets/x86/64/)
 5. translate the img into vsmk, notice the output methods should be using the online output method [V2V Converter / P2V Converter - Converting VM Formats (starwindsoftware.com)](https://www.starwindsoftware.com/starwind-v2v-converter#download)
 
-
