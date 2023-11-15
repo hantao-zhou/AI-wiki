@@ -14,3 +14,8 @@ https://help....
 
 ---
 sudo nano /etc/xrdp/startwm.sh
+
+```
+export GNOME_SHELL_SESSION_MODE=ubuntu
+export XDG_CURRENT_DESKTOP=ubuntu:GNOME
+```

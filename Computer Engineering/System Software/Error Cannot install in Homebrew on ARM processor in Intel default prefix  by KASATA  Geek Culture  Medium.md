@@ -7,31 +7,6 @@ author: KASATA
 
 # Error: Cannot install in Homebrew on ARM processor in Intel default prefix | by KASATA | Geek Culture | Medium
 
-> ## Excerpt
-> <The problem>. “Error: Cannot install in Homebrew on ARM processor in Intel default prefix” is published by KASATA in Geek Culture.
-
----
-[
-
-![KASATA](https://miro.medium.com/v2/resize:fill:88:88/1*uAgHWpf24FlEohl2PL29vg.jpeg)
-
-
-
-](https://medium.com/@kasata?source=post_page-----fd2e5f5fee88--------------------------------)[
-
-![Geek Culture](https://miro.medium.com/v2/resize:fill:48:48/1*bWAVaFQmpmU6ePTjNIje_A.jpeg)
-
-
-
-](https://medium.com/geekculture?source=post_page-----fd2e5f5fee88--------------------------------)
-
-## <The problem>
-
-when you are using M1 processor Mac PC and execute
-
-```
-brew install xxx
-```
 
 If you are reading this article, you are probably someone who has run the brew command and received the following error.
 
@@ -51,11 +26,15 @@ I share a solution to this error!
 
 (The error is caused by M1 Mac.)
 
-## <The solution>
+## The solution
 
 ```
-cd /optsudo mkdir homebrewsudo chown $(whoami):admin homebrewcurl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+cd /opt  
+sudo mkdir homebrew  
+sudo chown $(whoami):admin homebrew  
+curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
 ```
+
 
 After this step, the brew command will be installed in **/opt/homebrew/bin**
 
