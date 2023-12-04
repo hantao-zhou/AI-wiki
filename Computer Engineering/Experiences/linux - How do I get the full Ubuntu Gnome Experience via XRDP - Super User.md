@@ -137,6 +137,9 @@ if test -r /etc/profile; then
 fi
 test -x /etc/X11/Xsession && exec /etc/X11/Xsession
 exec /bin/sh /etc/X11/Xsession
+
+unset DBUS_SESSION_BUS_ADDRESS
+unset XDG_RUNTIME_DIR
 ```
 
 After that, `systemctl restart xrdp.service` or restart your machine and it should work fine. Here is my xrdp session after restart.

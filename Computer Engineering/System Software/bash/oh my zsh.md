@@ -28,6 +28,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
+ZSH_THEME="powerlevel10k/powerlevel10k"
 # About rc file
 
 It is a good idea to write your config in bashrc file and add this in zshrc

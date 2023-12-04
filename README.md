@@ -32,6 +32,13 @@ Several important referencing website
 - [Courses | Complete Machine Learning & Data Science Program (geeksforgeeks.org)](https://practice.geeksforgeeks.org/courses/data-science-live?utm_source=GfG&utm_medium=gfg_submenu&utm_campaign=DS_Submenu/)
 - [Medium – Where good ideas find you.](https://medium.com/)
 
+
+# Sth to Install Before you start
+
+[[Awesome Stuff!!!]]
+
+
+
 # Contribution
 
 Thanks to my selfless friend Ruihai Hou, for giving me his well-organized notebook, saved me much effort.
