@@ -1,0 +1,1 @@
+[MacGesture/MacGesture: Global mouse gestures for macOS (github.com)](https://github.com/MacGesture/MacGesture)

@@ -1,0 +1,1 @@
+1. [easymotion/vim-easymotion: Vim motions on speed! (github.com)](https://github.com/easymotion/vim-easymotion)
